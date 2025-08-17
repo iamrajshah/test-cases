@@ -7,4 +7,10 @@ app.get("/sum", (req, res) => {
   res.json({ result: a + b });
 });
 
+// function brokenSum(a, b) {
+//   // BUG: Concatenates strings
+//   return a + "" + b;
+// }
+// module.exports = { app, brokenSum };
+
 module.exports = app;
