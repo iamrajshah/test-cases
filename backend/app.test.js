@@ -9,7 +9,6 @@ test("GET /sum returns sum of two numbers", async () => {
 });
 
 
-// TODO: Uncomment the brokenSum test when the function is fixed
 // test("adds two numbers correctly", () => {
 //   expect(brokenSum(2, 3)).toBe(5);
 // });
