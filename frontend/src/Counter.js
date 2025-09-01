@@ -5,8 +5,10 @@ export default function Counter() {
 
   return (
     <div>
+      <h1 data-testid="demo">Demo</h1>
       <h1 data-testid="count">{count}</h1>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <button data-testid="increment" onClick={() => setCount(count + 1)}>Increment</button>
+      <button data-testid="decrement" onClick={() => setCount(count - 1)}>Decrement</button>
     </div>
   );
 }
