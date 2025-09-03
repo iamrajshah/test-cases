@@ -1,14 +1,14 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import Counter from "./Counter";
 
-test.skip("increments counter on click", () => {
+test("increments counter on click", () => {
   render(<Counter />);
   const button = screen.getByText(/increment/i);
   fireEvent.click(button);
   expect(screen.getByTestId("count")).toHaveTextContent("1");
 });
 
-test.skip("decrement counter on click", () => {
+test("decrement counter on click", () => {
   render(<Counter />);
   const button = screen.getByText(/increment/i);
   fireEvent.click(button);
@@ -19,7 +19,7 @@ test.skip("decrement counter on click", () => {
 
 
 // Test multiple increments
-test.skip("increments counter multiple times", () => {
+test("increments counter multiple times", () => {
   render(<Counter />);
   const button = screen.getByText(/increment/i);
   fireEvent.click(button);
