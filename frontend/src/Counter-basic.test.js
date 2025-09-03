@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import Counter from "./Counter";
 
 // Test initial value
-test.skip("shows initial count as 0", () => {
+test("shows initial count as 0", () => {
     render(<Counter />);
     expect(screen.getByTestId("count")).toHaveTextContent("0");
 });
